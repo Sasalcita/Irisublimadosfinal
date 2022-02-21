@@ -1,2 +1,51 @@
 $colorprincipal: linear-gradient(rgba(24, 224, 24, 0.74), rgba(223, 223, 79, 0.705));
 $colorsecundario: black;
+
+$Colores: (
+    primario: green,
+    secundario: yellow,
+    bg: rgb(17, 240, 47),
+    hover-primario: darken (green, 20),
+
+
+);
+
+%pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+};
+   
+@mixin mediaQuery ($pantallanumero, $tamano) {
+    @if $pantallanumero == mobile {
+        @media only screen and (min-width:$tamano){
+         @content
+        };
+    } @else {
+        @media only screen and (max-width:$tamano){
+            @content
+           }
+
+    }
+    
+             
+             
+             
+
+            
+        
+
+
+
+    
+     
+        
+};
+
+
+
+
+
+    
+    

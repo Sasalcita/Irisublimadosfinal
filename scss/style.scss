@@ -50,5 +50,18 @@ body{
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 224, 24, 0.74)), to(rgba(223, 223, 79, 0.705)));
     background-image: linear-gradient(rgba(24, 224, 24, 0.74), rgba(223, 223, 79, 0.705));
     color: black;
+  } 
+  
+  footer{
+    background-color: map-get($Colores, bg );
+    @extend %pie;
+    
+       
+     
   }
+ 
+  @include mediaQuery (mobile, 500px)
+  
+
+
   /*# sourceMappingURL=main.css.map */
